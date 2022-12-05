@@ -84,7 +84,7 @@ export interface IRadial {
 
 export interface IEvent {
     category:
-        | "calendari"
+        | "calendar"
         | "birthday"
         | "holiday"
         | "discover"
