@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-crmplantilla-dev-121437-authRole",
+      "UnauthRoleArn": "arn:aws:iam::138752629873:role/amplify-crmplantilla-dev-121437-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::138752629873:role/amplify-crmplantilla-dev-121437-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-crmplantilla-dev-121437-deployment",
+      "UnauthRoleName": "amplify-crmplantilla-dev-121437-unauthRole",
+      "StackName": "amplify-crmplantilla-dev-121437",
+      "StackId": "arn:aws:cloudformation:us-east-1:138752629873:stack/amplify-crmplantilla-dev-121437/4c848710-74c0-11ed-978b-12b25f9572b3",
+      "AmplifyAppId": "d73h003l0ehlg"
+    }
+  }
+}
