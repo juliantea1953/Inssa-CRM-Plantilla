@@ -4,7 +4,7 @@ import {
     StyledMedia,
     StyledMediaBody,
     StyledImage,
-    StyledImgText,
+    //StyledImgText,
     StyledSignin,
 } from "./style";
 
