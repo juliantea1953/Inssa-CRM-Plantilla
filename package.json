@@ -1,6 +1,6 @@
 {
-  "name": "crm",
-  "private": false,
+  "name": "doar",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
