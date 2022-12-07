@@ -6,8 +6,8 @@ import {
     StyledTitle,
     StyledDesc,
     StyledLabelWrap,
-    StyledDivider,
-    StyledBottomText,
+    /* StyledDivider,
+    StyledBottomText, */
 } from "./style";
 
 interface IFormValues {

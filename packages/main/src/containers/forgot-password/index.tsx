@@ -6,7 +6,7 @@ import {
     StyledTitle,
     StyledDesc,
     StyledResetForm,
-    StyledNote,
+    //StyledNote,
 } from "./style";
 
 const PasswordContainer = () => {
