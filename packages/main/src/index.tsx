@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import ThemeProvider from "./redux/providers/theme-provider";
 import PersistProvider from "./redux/providers/persist-provider";
 import { store } from "./redux/store";
-import App from "./App";
+import App from "../src/App";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
