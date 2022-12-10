@@ -5,14 +5,11 @@ import ThemeProvider from "./redux/providers/theme-provider";
 import PersistProvider from "./redux/providers/persist-provider";
 import { store } from "./redux/store";
 import App from "../src/App";
-import React from "react";
-import ReactDom from "react-dom/client";
-import { API } from "aws-amplify";
 
-/* const container = document.getElementById("root")!;
-const root = createRoot(container); */
+const container = document.getElementById("root")!;
+const root = createRoot(container);
 
-const root = ReactDom.createRoot(document.getElementById("inicio")!);
+/* const root = ReactDom.createRoot(document.getElementById("inicio")!); */
 
 root.render(
     <Provider store={store}>
