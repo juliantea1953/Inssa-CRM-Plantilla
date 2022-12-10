@@ -8,10 +8,10 @@ import App from "../src/App";
 import React from "react";
 import ReactDom from "react-dom/client";
 
-const container = document.getElementById("root")!;
-const root = createRoot(container);
+/* const container = document.getElementById("root")!;
+const root = createRoot(container); */
 
-/* const root = ReactDom.createRoot(document.getElementById("root")); */
+const root = ReactDom.createRoot(document.getElementById("inicio")!);
 
 root.render(
     <Provider store={store}>
