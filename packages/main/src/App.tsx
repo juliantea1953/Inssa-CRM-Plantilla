@@ -106,6 +106,12 @@ const App = () => {
 
                         {/* Dashboard Routes */}
                         <Route path="/" element={<SignIn />} />
+
+                        <Route
+                            path="/dashboard-one"
+                            element={<DashboardOne />}
+                        />
+
                         <Route
                             path="/dashboard-two"
                             element={<DashboardTwo />}

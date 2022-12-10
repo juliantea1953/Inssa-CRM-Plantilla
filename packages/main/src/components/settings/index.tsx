@@ -38,13 +38,13 @@ const SettingsCard = ({ themeHandler, curTheme }: IProps) => {
             <StyledSettingsBody>
                 <StyledCard>
                     <StyledLogo>
-                        do<span>ar</span>
+                        IN<span>SSA</span>
                     </StyledLogo>
-                    <StyledNote>Template Skin Customizer</StyledNote>
+                    <StyledNote>Personalizador</StyledNote>
                 </StyledCard>
 
                 <StyledCard $hasBorder>
-                    <StyledLabel>Skin Mode</StyledLabel>
+                    <StyledLabel>Color</StyledLabel>
                     <Row gutters={10}>
                         {SkinModes.map((el, i) => (
                             <Col xs={4} sm={4} key={el} mt={i > 2 ? "10px" : 0}>
@@ -60,7 +60,7 @@ const SettingsCard = ({ themeHandler, curTheme }: IProps) => {
 
                 <div className="pd-y-20 bd-t" style={{ display: "none" }}>
                     <h4 className="tx-sans tx-10 tx-uppercase tx-bold tx-spacing-1 tx-color-02 mg-b-15">
-                        Navigation Skin
+                        Navegación
                     </h4>
                     <div className="row row-xs">
                         <div className="col-4">
@@ -110,7 +110,7 @@ const SettingsCard = ({ themeHandler, curTheme }: IProps) => {
                 </div>
 
                 <StyledCard $hasBorder>
-                    <StyledLabel>Navigation Layout</StyledLabel>
+                    <StyledLabel>Navegación</StyledLabel>
                     <Row gutters={10}>
                         <Col xs={6} sm={6}>
                             <StyledNavLink href={`${location}/`}>

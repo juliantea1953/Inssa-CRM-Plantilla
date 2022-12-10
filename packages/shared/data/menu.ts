@@ -29,7 +29,7 @@ const menus = [
             {
                 id: 11,
                 label: "Sales Monitoring",
-                url: "/",
+                url: "/dashboard-one",
                 Icon: BarChart2,
             },
             {
@@ -60,13 +60,13 @@ const menus = [
     },
     {
         id: 2,
-        label: "Apps",
+        label: "Aplicaciones",
         url: "/",
         Icon: Package,
         submenu: [
             {
                 id: 21,
-                label: "Calendar",
+                label: "Calendario",
                 url: "/apps/calendar",
                 Icon: Calendar,
             },
@@ -78,19 +78,19 @@ const menus = [
             },
             {
                 id: 23,
-                label: "Contacts",
+                label: "Contactos",
                 url: "/apps/contacts",
                 Icon: Users,
             },
             {
                 id: 25,
-                label: "File Manager",
+                label: "Administrador de archivos",
                 url: "/apps/file-manager",
                 Icon: FileText,
             },
             {
                 id: 26,
-                label: "Mail",
+                label: "Correo",
                 url: "/apps/mail",
                 Icon: Mail,
             },
@@ -104,12 +104,12 @@ const menus = [
         megamenu: [
             {
                 id: 31,
-                title: "Authentication",
+                title: "Autenticación",
                 Icon: Layers,
                 submenu: [
                     {
                         id: 311,
-                        label: "Sign In",
+                        label: "Login",
                         url: "/signin",
                         Icon: LogIn,
                     },

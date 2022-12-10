@@ -15,7 +15,6 @@ root.render(
     <Provider store={store}>
         <PersistProvider>
             <ThemeProvider>
-                <h1>hola mundo</h1>
                 <App />
             </ThemeProvider>
         </PersistProvider>
