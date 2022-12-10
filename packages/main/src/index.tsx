@@ -7,6 +7,7 @@ import { store } from "./redux/store";
 import App from "../src/App";
 import React from "react";
 import ReactDom from "react-dom/client";
+import { API } from "aws-amplify";
 
 /* const container = document.getElementById("root")!;
 const root = createRoot(container); */
