@@ -6,10 +6,10 @@ import PersistProvider from "./redux/providers/persist-provider";
 import { store } from "./redux/store";
 import App from "../src/App";
 import { Amplify } from "aws-amplify";
-import awsExports from "../../../src/aws-exports";
-import React from "react";
-/* import awsExports from "./aws-exports"; */
-/* Amplify.configure(awsExports); */
+/* import awsExports from "../../../src/aws-exports"; */
+
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);

@@ -2,7 +2,7 @@
     "compilerOptions": {
       "baseUrl": "./packages",
       "paths": {
-        "@ht/*": ["./*/src/"]
+        "@ht/*": ["./*/src/", "../src"]
       },
       "jsx": "react",
       "module": "CommonJS",
@@ -18,5 +18,6 @@
       "checkJs": false,
       "outDir": "src",
     },
-    "exclude": ["node_modules", "docs", "stories", "__tests__", "dist"]
+    "exclude": ["node_modules", "docs", "stories", "__tests__", "dist"],
+    "include": ["src", "src/*", "src/**/*", "craco.config.js", "../../../src", "../../../src/*", "../../../src/**/*"]
 }
