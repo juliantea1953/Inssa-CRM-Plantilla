@@ -7,6 +7,7 @@
         "esModuleInterop": true,
         "baseUrl": ".",
         "outDir": "dist",
+        "rootDir": "src",
         "downlevelIteration": true,
     },
     "include": ["src", "src/*", "src/**/*", "craco.config.js"]
