@@ -5,12 +5,18 @@ import SEO from "../components/seo";
 
 const SignIn = () => {
     return (
-        <Layout>
+        <>
             <SEO />
             <Content fullHeight>
                 <AuthContainer />
             </Content>
-        </Layout>
+        </>
+        /* <Layout>
+            <SEO />
+            <Content fullHeight>
+                <AuthContainer />
+            </Content>
+        </Layout> */
     );
 };
 
