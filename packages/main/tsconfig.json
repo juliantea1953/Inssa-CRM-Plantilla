@@ -6,9 +6,8 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "baseUrl": ".",
-        "outDir": "dist",
-        "rootDir": "src",
+        "outDir": "src",
         "downlevelIteration": true,
     },
-    "include": ["src", "src/*", "src/**/*", "craco.config.js"]
+    "include": ["src", "src/*", "src/**/*", "craco.config.js", ""]
 }

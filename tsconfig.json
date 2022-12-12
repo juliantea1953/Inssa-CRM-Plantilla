@@ -16,7 +16,7 @@
       "skipLibCheck": true,
       "allowJs": false,
       "checkJs": false,
-      "rootDir": "src",
+      "outDir": "src",
     },
     "exclude": ["node_modules", "docs", "stories", "__tests__", "dist"]
 }
