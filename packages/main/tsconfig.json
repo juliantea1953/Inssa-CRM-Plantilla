@@ -9,5 +9,5 @@
         "outDir": "dist",
         "downlevelIteration": true,
     },
-    "include": ["src", "src/*", "src/**/*", "craco.config.js", "../../../src", "../../../src/*", "../../../src/**/*"]
+    "include": ["src", "src/*", "src/**/*", "craco.config.js"]
 }
