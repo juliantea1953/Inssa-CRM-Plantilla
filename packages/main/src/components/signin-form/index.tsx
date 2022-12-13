@@ -4,7 +4,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { Amplify, API, graphqlOperation } from "aws-amplify";
 /* import { createTodo } from "src/graphql/mutations"; */
 import { hasKey } from "@doar/shared/methods";
-import { createTodo } from "../../graphql/mutations";
+import { createTodo, deleteTodo, updateTodo } from "../../graphql/mutations";
+import { listTodos } from "../../graphql/queries";
 import {
     StyledWrap,
     StyledTitle,
@@ -19,17 +20,12 @@ interface IFormValues {
     description: string;
 }
 
-async function BotonClip() {
+/* async function BotonClip() {
     const [task, setTask] = useState({
         name: "",
         description: "",
     });
-
-    const resul = await API.graphql(
-        graphqlOperation(createTodo, { input: task })
-    );
-    /* console.log(resul); */
-}
+} */
 
 const SigninForm = () => {
     const {
@@ -50,6 +46,12 @@ const SigninForm = () => {
             graphqlOperation(createTodo, { input: data })
         );
         console.log(data);
+        console.log(resul);
+
+        const result = API.graphql(
+            graphqlOperation(listTodos, { input: data })
+        );
+        console.log(result);
     };
 
     return (
