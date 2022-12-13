@@ -20,5 +20,8 @@
       "noEmit": false,
       "jsx": "react-jsx",
       "sourceMap": true
-    }
+    },
+    "include": ["src/**/*" , "graphql/*/**"],
+    "files": [],
+    "references": [{"path": "graphql"}]
 }

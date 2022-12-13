@@ -19,5 +19,6 @@
       //"rootDirs": ["./src", "./packages" ],
       "outDir": "./dist",
     },
-    "exclude": ["node_modules", "docs", "stories", "__tests__", "dist"]
+    "exclude": ["node_modules", "docs", "stories", "__tests__", "dist"],
+    "include": ["src/**/*"]
 }

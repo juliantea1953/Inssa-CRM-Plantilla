@@ -1,6 +1,10 @@
 import { FormGroup, Label, Input, Anchor, Button } from "@doar/components";
+import React, { useEffect, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { Amplify, API, graphqlOperation } from "aws-amplify";
+/* import { createTodo } from "src/graphql/mutations"; */
 import { hasKey } from "@doar/shared/methods";
+import { createTodo } from "../../graphql/mutations";
 import {
     StyledWrap,
     StyledTitle,
@@ -11,18 +15,21 @@ import {
 } from "./style";
 
 interface IFormValues {
-    email: string;
-    password: string;
+    name: string;
+    description: string;
 }
 
-const BotonClip = () => {
-    return (
-        <div>
-            <p>holaaaa</p>
-            <p>mundo</p>
-        </div>
+async function BotonClip() {
+    const [task, setTask] = useState({
+        name: "",
+        description: "",
+    });
+
+    const resul = await API.graphql(
+        graphqlOperation(createTodo, { input: task })
     );
-};
+    /* console.log(resul); */
+}
 
 const SigninForm = () => {
     const {
@@ -31,8 +38,18 @@ const SigninForm = () => {
         formState: { errors },
     } = useForm<IFormValues>();
 
+    const [task, setTask] = useState({
+        name: "",
+        description: "",
+    });
+
     const onSubmit: SubmitHandler<IFormValues> = (data) => {
-        alert(JSON.stringify(data, null));
+        /* alert(JSON.stringify(data, null)); */
+
+        const resul = API.graphql(
+            graphqlOperation(createTodo, { input: data })
+        );
+        console.log(data);
     };
 
     return (
@@ -50,10 +67,10 @@ const SigninForm = () => {
                         type="email"
                         id="email"
                         placeholder="correo@.com"
-                        feedbackText={errors?.email?.message}
+                        feedbackText={errors?.name?.message}
                         state={hasKey(errors, "email") ? "error" : "success"}
                         showState={!!hasKey(errors, "email")}
-                        {...register("email", {
+                        {...register("name", {
                             required: "Correo requerido",
                             pattern: {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
@@ -75,10 +92,10 @@ const SigninForm = () => {
                         id="password"
                         type="password"
                         placeholder="Ingresa tu contraseña"
-                        feedbackText={errors?.password?.message}
+                        feedbackText={errors?.description?.message}
                         state={hasKey(errors, "password") ? "error" : "success"}
                         showState={!!hasKey(errors, "password")}
-                        {...register("password", {
+                        {...register("description", {
                             required: "Contraseña requerida",
                             minLength: {
                                 value: 6,
